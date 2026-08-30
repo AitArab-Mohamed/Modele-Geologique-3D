@@ -10,10 +10,10 @@ from trame.widgets import pyvista as pv_widgets
 # 1 & 2. EXTRACTION DES DONNÉES DEPUIS LES CSV
 # =====================================================================
 print("Extraction des données CSV en cours...")
-df_collar = pd.read_csv('collar.csv')
-df_survey = pd.read_csv('survey.csv')
-df_litho = pd.read_csv('litho.csv')
-df_assay = pd.read_csv('assay.csv')
+df_collar = pd.read_csv('collar.csv', sep=';')
+df_survey = pd.read_csv('survey.csv', sep=';')
+df_litho = pd.read_csv('litho.csv', sep=';')
+df_assay = pd.read_csv('assay.csv', sep=';')
 
 # Nettoyage global
 colonne_soc = 'SOCIETY' 
