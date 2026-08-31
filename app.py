@@ -25,6 +25,9 @@ df_survey = pd.read_csv('survey.csv', sep=';')
 df_litho = pd.read_csv('litho.csv', sep=';')
 df_assay = pd.read_csv('assay.csv', sep=';')
 
+# --- Mode test optionnel : décommente pour limiter à N sondages ---
+df_collar = df_collar.head(100)
+
 # Nettoyage
 colonne_soc = 'SOCIETY'
 if colonne_soc not in df_collar.columns:
